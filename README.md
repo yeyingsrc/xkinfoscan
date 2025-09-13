@@ -1,4 +1,4 @@
-# xkInfoScan - 多功能网络信息扫描工具 🕵️‍♂️(先下载release里压缩包，git克隆没有完全上传)
+# xkInfoScan - 多功能网络信息扫描工具 🕵️‍♂️
 
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -49,7 +49,10 @@ xkInfoScan 是一款集成化的网络信息收集与安全扫描工具，支持
 # 安装核心依赖
 pip install -r requirements.txt
 ```
-
+直接下载release压缩包即可，如果你是克隆的需要下载一个dat文件放在data目录里，否则ip地理信息模块不可用  
+通过网盘分享的文件：GeoLiteCity.dat
+链接: https://pan.baidu.com/s/1_Z-m7vzJGIOOBJ9FIkabXA 提取码: gffx 
+--来自百度网盘超级会员v8的分享
 
 ### 2. 目录结构
 ```
