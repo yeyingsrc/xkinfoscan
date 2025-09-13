@@ -1,12 +1,12 @@
 # xkInfoScan - 多功能网络信息扫描工具 🕵️‍♂️
 
-[![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/)
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Tool Type](https://img.shields.io/badge/Tool-Network%20Scanner-orange.svg)
 
 
 ## 项目简介 📖
-xkInfoScan 是一款集成化的网络信息收集与安全扫描工具，支持 **IP/域名/URL 多维度目标探测**，涵盖目录扫描、CMS识别、漏洞检测、信息泄露挖掘、CDN检测等核心功能，适用于渗透测试前期信息收集、网络资产测绘及安全风险评估场景。
+xkInfoScan 是一款集成化的网络信息收集与安全扫描工具，支持 **IP/域名/URL/信息追踪 多维度目标探测**，涵盖目录扫描、CMS识别、漏洞检测、信息泄露挖掘、CDN检测等核心功能，适用于渗透测试前期信息收集、网络资产测绘及安全风险评估场景。
 
 工具设计遵循 **模块化架构**，各功能模块独立可配置，支持自定义扫描参数与结果导出，同时提供友好的命令行交互与彩色输出，降低使用门槛。
 
@@ -44,7 +44,7 @@ xkInfoScan 是一款集成化的网络信息收集与安全扫描工具，支持
 
 ## 环境准备 🛠️
 ### 1. 依赖安装
-工具依赖 Python 3.7+ 环境，需先安装第三方库：
+工具开发时使用 Python 3.12 环境，需先安装第三方库：
 ```bash
 # 安装核心依赖
 pip install -r requirements.txt
@@ -133,7 +133,7 @@ python xkinfoscan.py -d example.com --domain-mode all -o domain_result.csv
 
 ## 版本更新 📅
 ### 当前版本特性（V1.0）
-- ✅ 新增CDN检测模块（`--ip-mode cdn`）
+- ✅ CDN检测模块（`--ip-mode cdn`）
 - ✅ 完善403绕过检测与信息泄露攻击模块
 - ✅ 优化IP网段扫描逻辑（支持A/B/C段自动生成）
 - ✅ 增加调试模式与错误详情输出
@@ -142,9 +142,9 @@ python xkinfoscan.py -d example.com --domain-mode all -o domain_result.csv
 
 ## 联系方式 📧
 若发现BUG或有功能建议，可通过以下方式反馈：
-- 项目Issues：[提交问题](https://github.com/your-username/xkInfoScan/issues)（需替换为实际仓库地址）
-- 开发者邮箱：example@xxx.com（需替换为实际邮箱）
+- 项目Issues：[提交问题](https://github.com/xk11z/xkInfoScan/issues)（需替换为实际仓库地址）
+- 开发者邮箱：xingxkllz@gmail.com（需替换为实际邮箱）
 
 ---
+## 参考项目
 
-**提示**：使用前建议先执行 `python xkinfoscan.py -h` 查看完整参数说明，或参考 `config/` 下各模块代码了解具体实现逻辑。
