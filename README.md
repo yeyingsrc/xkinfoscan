@@ -50,12 +50,6 @@ xkInfoScan 是一款集成化的网络信息收集与安全扫描工具，支持
 pip install -r requirements.txt
 ```
 
-**核心依赖说明**：
-- `validators`：URL/域名格式合法性验证
-- `colorama`：命令行彩色输出
-- `argparse`：命令行参数解析（Python内置）
-- 其他模块依赖（如 `requests`、`dnspython` 等，需根据实际 `requirements.txt` 补充）
-
 
 ### 2. 目录结构
 ```
@@ -102,23 +96,41 @@ python xkinfoscan.py [目标参数] [功能参数] [通用参数]
 ### 常用场景示例
 以下是工具高频使用场景的命令示例，覆盖核心功能：
 
-#### 1. CDN检测（IP模块新增功能）
-```bash
-# 检测目标IP是否使用CDN
-python xkinfoscan.py -i 1.1.1.1 --ip-mode cdn
+#### 1. ip信息探测
 ```
+python xkinfoscan.py -i 1.1.1.1
+```
+<img width="338" height="295" alt="ip信息" src="https://github.com/user-attachments/assets/a3918687-609b-4d8a-aba8-863a5b198510" />  
+
+
+<img width="310" height="374" alt="ip" src="https://github.com/user-attachments/assets/03efb6dd-3c5e-4bd1-8671-1c5fbb3c536a" />
+
 
 #### 2. 信息追踪（IP/手机号/用户名查询）
 ```bash
 # 启用信息追踪模块，交互输入查询目标
 python xkinfoscan.py -k
 ```
+<img width="337" height="222" alt="信息追踪" src="https://github.com/user-attachments/assets/5ac759bb-8f14-4563-a659-ef1944f36453" />
 
-#### 3. 域名全信息扫描
+
+
+#### 3. 域名信息扫描
 ```bash
 # 扫描域名的WHOIS、DNS、子域名等全部信息，并导出到CSV
-python xkinfoscan.py -d example.com --domain-mode all -o domain_result.csv
+python xkinfoscan.py -d example.com
 ```
+
+<img width="233" height="189" alt="域名" src="https://github.com/user-attachments/assets/125d0979-3494-438c-81f7-abfbcb92590d" />
+
+#### 4. url信息扫描
+```bash
+# 扫描域名的WHOIS、DNS、子域名等全部信息，并导出到CSV
+python xkinfoscan.py -u http://example.com
+```
+<img width="226" height="242" alt="url" src="https://github.com/user-attachments/assets/52001cee-6697-4748-966a-14214eea94e6" />
+
+
 
 
 ## 注意事项 ⚠️
