@@ -1,4 +1,4 @@
-# xkInfoScan - 多功能网络信息扫描工具 🕵️‍♂️
+# xkInfoScan - 多功能网络信息扫描工具 🕵️‍♂️(先下载release里压缩包，git克隆没有完全上传)
 
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
