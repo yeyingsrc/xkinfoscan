@@ -157,8 +157,8 @@ python xkinfoscan.py -u http://example.com
 
 ## 联系方式 📧
 若发现BUG或有功能建议，可通过以下方式反馈：
-- 项目Issues：[提交问题](https://github.com/xk11z/xkInfoScan/issues)（需替换为实际仓库地址）
-- 开发者邮箱：xingxkllz@gmail.com（需替换为实际邮箱）
+- 项目Issues：[提交问题](https://github.com/xk11z/xkInfoScan/issues)
+- 开发者邮箱：xingxkllz@gmail.com
 
 ---
 ## 参考项目
